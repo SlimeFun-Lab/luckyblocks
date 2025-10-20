@@ -21,11 +21,11 @@ public final class BryanZombieSurprise implements Surprise {
     private final ItemStack axe;
 
     public BryanZombieSurprise() {
-        axe = new CustomItemStack(Material.GOLDEN_AXE, "&e&lLucky Axe");
-        axe.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 10);
-        axe.addUnsafeEnchantment(Enchantment.DIG_SPEED, 10);
-        axe.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 10);
-        axe.addUnsafeEnchantment(Enchantment.DURABILITY, 10);
+        axe = CustomItemStack.create(Material.GOLDEN_AXE, "&e&lLucky Axe");
+        axe.addUnsafeEnchantment(Enchantment.SHARPNESS, 10);
+        axe.addUnsafeEnchantment(Enchantment.EFFICIENCY, 10);
+        axe.addUnsafeEnchantment(Enchantment.LOOTING, 10);
+        axe.addUnsafeEnchantment(Enchantment.UNBREAKING, 10);
     }
 
     @Override
